@@ -1,0 +1,177 @@
+body {
+    background-color: #E9E9E9;
+    margin: 0;
+    padding: 15px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 15px;
+    height: 100%;
+}
+
+.ui-button:focus {
+    outline: none;
+}
+
+.commonSelectMenu, .commonSelectMenu:hover, .commonSelectMenu:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #E1E1E1 !important;
+}
+
+.commonSelectMenu:active {
+    background-color: #E1E1E1;
+}
+
+.commonButton, .commonButton:hover, .commonButton:focus {
+    background-color: #1B8EF6;
+    color: #FFFFFF;
+}
+
+.saveButton, .saveButton:hover, .saveButton:focus {
+    background-color: #1B8EF6;
+    color: #FFFFFF;
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+}
+
+.commonButton:active, .saveButton:active {
+    background-color: #007FFF;
+}
+
+.cancelButton, .cancelButton:hover, .cancelButton:focus {
+    border: 1px solid #1B8EF6 !important;
+    background-color: #FFFFFF;
+    color: #1B8EF6;
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+}
+
+.cancelButton:active {
+    background-color: #1B8EF6;
+    color: #FFFFFF;
+}
+
+.listView {
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.listView thead {
+    background-color: #FAFAFA;
+    color: #222222;
+    font-weight: 400;
+}
+
+.listView thead td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.listView tbody {
+    color: #454545;
+}
+
+.listView tbody tr {
+    border-top: 1px solid #E5E5E5;
+}
+
+.listView tbody td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.detail {
+    color: #2DA1EF;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.update {
+    color: #3CAFC8;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.delete {
+    color: red;
+    display: block;
+}
+
+.add {
+    color: #51ADEB;
+    background: url("../img/add.png") no-repeat 0 50%;
+    font-size: 14px;
+    padding-left: 18px;
+}
+
+.upload {
+    color: #51ADEB;
+    background: url("../img/upload.png") no-repeat 0 50%;
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+.download {
+    color: #51ADEB;
+    background: url("../img/download.png") no-repeat 0 50%;
+    font-size: 14px;
+    padding-left: 14px;
+    border: 0;
+}
+
+.export {
+    color: #2DA1EF;
+    background: url("../img/export.png") no-repeat 0 50%;
+    font-size: 14px;
+    padding-left: 18px;
+}
+
+.interval {
+    margin-left: 6px;
+    margin-right: 12px;
+    background-color: #ECECEC;
+    padding-left: 1px;
+}
+
+.smallButton, .smallButton:hover, .smallButton:focus {
+    padding: 3px 5px 3px 5px;
+    background-color: #5094DC;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin: auto auto 5px auto;
+    display: block;
+}
+
+.smallButton:active {
+    background-color: #007FFF;
+}
+
+.warn {
+    position: relative;
+    margin-top: 5px;
+}
+
+.warn:active, .warn:hover, .warn:focus {
+    margin-top: 5px;
+}
+
+.warn img {
+    position: absolute;
+    top: -30%;
+    margin-left: 20px;
+}
+
+input[type="text"] {
+    height: 30px;
+    border: 1px solid #E2E2E2;
+    border-radius: 3px;
+    font-size: 18px;
+}

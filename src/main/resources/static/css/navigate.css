@@ -1,0 +1,75 @@
+.navigate-container {
+    display: inline-block;
+    position: fixed;
+    top: 100px;
+}
+
+.navigate-bar {
+    display: inline-block;
+}
+
+.whiteCircle {
+    display: block;
+    border: 2px solid #DDDDDD;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 6px;
+    height: 6px;
+}
+
+.brink {
+    display: block;
+    width: 2px;
+    height: 10px;
+    background-color: #DDDDDD;
+}
+
+.greyCircle {
+    display: block;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: #DDDDDD;
+    width: 6px;
+    height: 6px;
+}
+
+.join {
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: #DDDDDD;
+}
+
+.navigate-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -3px;
+}
+
+.navigate-textView {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2C2C2C;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.navigate-textView-active, .navigate-textView:hover {
+    cursor: pointer;
+    color: #1B8EF6;
+}
+
+.right {
+    position: absolute;
+    border: 2px solid #FFFFFF;
+    background: url("../img/right_indicate.png");
+    width: 32px; /*根据图片大小修改*/
+    height: 12px; /*根据图片大小修改*/
+    left: -12px; /*根据图片大小修改*/
+    top: 18px; /*根据图片大小修改*/
+}
