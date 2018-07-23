@@ -5,6 +5,7 @@
     <base target="_blank"/>
     <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/crewListView.css">
     <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="css/navigate.css">
     <script src="js/jquery.js"></script>
@@ -19,8 +20,12 @@
             setButton($("#shippingCertificate").button(), "smallButton");
             setButton($("#techniqueFile").button(), "smallButton");
             setButton($("#deviceList").button(), "smallButton");
-            setButton($("#save").button(), "saveButton");
-            setButton($("#cancel").button(), "cancelButton");
+            setButton($("#save").button(), "blueButton");
+            setButton($("#cancel").button(), "whiteButton");
+            setButton($("#determine").button(), "blueButton");
+            setButton($("#delete").button(), "redButton");
+            setButton($("#addEmbarkPerson").button(), "noBorderWhiteButton");
+            setButton($("#addPlanSuccessor").button(), "noBorderWhiteButton");
             $('.M-box11').pagination({
                 count: 3,
                 pageCount: 9,
@@ -43,9 +48,13 @@
                 <label>Name:
                     <input type="text" style="width: 200px;" required>
                 </label>
+                <div style="margin-top: 30px">
+                    <button id="determine" type="submit">确定</button>
+                    <button id="delete" type="reset">删除</button>
+                </div>
             </div>
         </td>
-        <td style="width: 20%;background-color: #FFFFFF" rowspan="5" valign="top" align="center">
+        <td style="width: 20%;background-color: #FFFFFF" rowspan="6" valign="top" align="center">
             <ul id="navigate">
                 <li position="#inputArea">1.输入区域</li>
                 <li position="#searchDiv">2.搜索标签</li>
@@ -90,8 +99,8 @@
                     <tbody>
                     <tr>
                         <td>test</td>
-                        <td>test</td>
-                        <td>test</td>
+                        <td><a class="embark" href="http://www.baidu.com">上船</a></td>
+                        <td><a class="disembark" href="http://www.baidu.com">下船</a></td>
                         <td>
                             <button id="shippingCertificate" class="warn">
                                 文件证书
@@ -128,6 +137,68 @@
         <td>
             <div id="pager" class="container" style="padding-bottom: 200px">
                 <div class="m-style M-box11"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="container" style="padding-bottom: 200px">
+                <table class="crewListView">
+                    <thead>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td colspan="6">
+                            在船人员（10）
+                            <button id="addEmbarkPerson" style="float: right; right: 15px">+ 上船人</button>
+                        </td>
+                        <td colspan="4">
+                            上船计划
+                            <button id="addPlanSuccessor" style="float: right; right: 15px">+ 计划接班人</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>姓名</td>
+                        <td>已在船天数</td>
+                        <td>计划下船时间</td>
+                        <td>计划下船港</td>
+                        <td>备注</td>
+                        <td>操作</td>
+                        <td>姓名</td>
+                        <td>计划上船时间</td>
+                        <td>计划上船港</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>船长</td>
+                        <td>王老五</td>
+                        <td>
+                            150
+                            <span class="noteTextView">17-12-01大连港上</span>
+                        </td>
+                        <td>18-09-30</td>
+                        <td>天津</td>
+                        <td></td>
+                        <td>
+                            <a class="disembark" href="http://www.baidu.com">下船</a>
+                            <a class="update" href="http://www.baidu.com">修改</a>
+                        </td>
+                        <td colspan="4" class="noSuccessorTextView">尚无人接班</td>
+                    </tr>
+                    <tr>
+                        <td>副手</td>
+                        <td colspan="6" class="noCrewTextView">尚无人上船</td>
+                        <td>张三</td>
+                        <td>18-10-01</td>
+                        <td>天津</td>
+                        <td>
+                            <a class="embark" href="http://www.baidu.com">上船</a>
+                            <a class="update" href="http://www.baidu.com">修改</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </td>
     </tr>

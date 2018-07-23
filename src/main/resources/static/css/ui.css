@@ -28,18 +28,18 @@ body {
     color: #FFFFFF;
 }
 
-.saveButton, .saveButton:hover, .saveButton:focus {
+.blueButton, .blueButton:hover, .blueButton:focus {
     background-color: #1B8EF6;
     color: #FFFFFF;
     padding: 5px 20px 5px 20px;
     font-size: 14px;
 }
 
-.commonButton:active, .saveButton:active {
+.commonButton:active, .blueButton:active {
     background-color: #007FFF;
 }
 
-.cancelButton, .cancelButton:hover, .cancelButton:focus {
+.whiteButton, .whiteButton:hover, .whiteButton:focus {
     border: 1px solid #1B8EF6 !important;
     background-color: #FFFFFF;
     color: #1B8EF6;
@@ -47,8 +47,32 @@ body {
     font-size: 14px;
 }
 
-.cancelButton:active {
+.whiteButton:active {
     background-color: #1B8EF6;
+    color: #FFFFFF;
+}
+
+.noBorderWhiteButton, .noBorderWhiteButton:hover, .noBorderWhiteButton:focus {
+    background-color: #FFFFFF;
+    color: #5DAAE8;
+    padding: 3px 10px 3px 10px;
+    font-size: 13px;
+}
+
+.noBorderWhiteButton:active {
+    background-color: #5DAAE8;
+    color: #FFFFFF;
+}
+
+.redButton, .redButton:hover, .redButton:focus {
+    background-color: #ED3B40;
+    color: #FFFFFF;
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+}
+
+.redButton:active {
+    background-color: #ED1420;
     color: #FFFFFF;
 }
 
@@ -174,4 +198,16 @@ input[type="text"] {
     border: 1px solid #E2E2E2;
     border-radius: 3px;
     font-size: 18px;
+}
+
+.embark {
+    color: #2DA1EF;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.disembark {
+    color: #F5BC7D;
+    margin-bottom: 3px;
+    display: block;
 }
