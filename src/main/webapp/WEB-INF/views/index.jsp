@@ -157,16 +157,16 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>姓名</td>
-                        <td>已在船天数</td>
-                        <td>计划下船时间</td>
-                        <td>计划下船港</td>
-                        <td>备注</td>
-                        <td>操作</td>
-                        <td>姓名</td>
-                        <td>计划上船时间</td>
-                        <td>计划上船港</td>
-                        <td>操作</td>
+                        <td style="width: 10%">姓名</td>
+                        <td style="width: 13%">已在船天数</td>
+                        <td style="width: 10%">计划下船时间</td>
+                        <td style="width: 10%">计划下船港</td>
+                        <td style="width: 7%">备注</td>
+                        <td style="width: 7%">操作</td>
+                        <td style="width: 8%">姓名</td>
+                        <td style="width: 11%">计划上船时间</td>
+                        <td style="width: 9%">计划上船港</td>
+                        <td style="width: 7%">操作</td>
                     </tr>
                     </thead>
                     <tbody>
