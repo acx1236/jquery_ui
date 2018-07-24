@@ -47,6 +47,12 @@ body {
     font-size: 14px;
 }
 
+/*随着图片大小改变*/
+.leftIconButton, .leftIconButton:hover, .leftIconButton:focus, .leftIconButton:active {
+    background: no-repeat 10px center;
+    padding-left: 30px;
+}
+
 .whiteButton:active {
     background-color: #1B8EF6;
     color: #FFFFFF;

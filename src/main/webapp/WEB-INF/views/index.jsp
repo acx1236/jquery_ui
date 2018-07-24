@@ -26,6 +26,7 @@
             setButton($("#delete").button(), "redButton");
             setButton($("#addEmbarkPerson").button(), "noBorderWhiteButton");
             setButton($("#addPlanSuccessor").button(), "noBorderWhiteButton");
+            setIconButton($("#iconButton").button(), "whiteButton", "img/download.png");
             $('.M-box11').pagination({
                 count: 3,
                 pageCount: 9,
@@ -48,10 +49,11 @@
                 <label>Name:
                     <input type="text" style="width: 200px;" required>
                 </label>
-                <div style="margin-top: 30px">
+                <div style="margin: 30px">
                     <button id="determine" type="submit">确定</button>
                     <button id="delete" type="reset">删除</button>
                 </div>
+                <button id="iconButton">导出</button>
             </div>
         </td>
         <td style="width: 20%;background-color: #FFFFFF" rowspan="6" valign="top" align="center">
