@@ -1,8 +1,11 @@
-function selectMenu(select) {
-    select
-        .selectmenu("instance")
-        .button
-        .addClass("commonSelectMenu");
+function selectMenu(addClassName) {
+    $("select").each(function () {
+        var button = $(this).selectmenu().selectmenu("instance").button;
+        button.addClass("commonSelectMenu");
+        if (addClassName !== undefined) {
+            button.addClass(addClassName);
+        }
+    });
 }
 
 function setButton(button, classes) {
