@@ -1,0 +1,90 @@
+.select-main {
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    position: relative;
+    cursor: pointer;
+    /*z-index: 10;*/
+}
+
+.select-icon {
+    border-top: 5px solid #E4E4E4;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    /*z-index: 5;*/
+}
+
+.select-icon.reverse {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid #E4E4E4;
+}
+
+.select-value {
+    height: 100%;
+    padding-right: 15px;
+}
+
+.select-block {
+    background-color: #FFFFFF;
+    border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    border-radius: 3px;
+    position: absolute;
+    left: -1px;
+    display: none;
+    overflow: auto;
+    /*box-shadow: 0 0 2px #2db2ff;*/
+}
+
+.select-list {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow: auto;
+}
+
+/*.select-list::-webkit-scrollbar {*/
+/*width: 12px*/
+/*}*/
+
+/*.select-list::-webkit-scrollbar-track {*/
+/*border-radius: 10px*/
+/*}*/
+
+/*.select-list::-webkit-scrollbar-thumb {*/
+/*border-radius: 10px;*/
+/*-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, .5)*/
+/*}*/
+
+/*.select-list {*/
+/*scrollbar-face-color: #aeb1b1;*/
+/*scrollbar-shadow-color: #c7caca;*/
+/*scrollbar-highlight-color: #ced1d1;*/
+/*scrollbar-3dlight-color: #ced1d1;*/
+/*scrollbar-darkshadow-color: #c7caca;*/
+/*scrollbar-track-color: #ced1d1;*/
+/*scrollbar-arrow-color: #333*/
+/*}*/
+
+.select-item {
+    padding: 5px;
+}
+
+.select-item:hover, li.select-item.active {
+    background-color: #E4E4E4;
+    color: #FFFFFF;
+}
