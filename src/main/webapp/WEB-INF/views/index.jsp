@@ -26,7 +26,31 @@
             setButton($("#delete").button(), "redButton");
             setButton($("#addEmbarkPerson").button(), "noBorderWhiteButton");
             setButton($("#addPlanSuccessor").button(), "noBorderWhiteButton");
-            setIconButton($("#iconButton").button(), "whiteButton", "img/download.png");
+            setIconButton($("#iconButton").button().click(function () {
+                $("#pager").dialog({
+                    modal: true,
+                    position: {
+                        using: function (pos) {
+                            $(this).css(pos);
+                            $(this).css('position', 'fixed');
+                            var top = (document.body.clientHeight - 720) / 2;
+                            top = top < 0 ? 0 : top;
+                            $(this).css('top', top + 229);
+                        }
+                    },
+                    height: 720,
+                    width: 600,
+                    title: '上船',
+                    buttons: {
+                        "确定": function () {
+                            $(this).dialog("close");
+                        }
+                    },
+                    open: function () {
+                        $(this).parent().focus();
+                    }
+                }).setDialogStyle();
+            }), "whiteButton", "img/download.png");
             $('.M-box11').pagination({
                 count: 3,
                 pageCount: 9,

@@ -17,3 +17,17 @@ function setIconButton(button, classes, icon) {
     button.addClass("leftIconButton");
     button.css("background-image", "url(" + icon + ")");
 }
+
+jQuery(function ($) {
+    $.fn.setDialogStyle = function () {
+        $('.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix').each(function () {
+            $(this).css('padding-left', '0');
+            $(this).css('padding-right', '0');
+            $(this).css('text-align', 'center');
+            $(this).find('div').each(function () {
+                $(this).removeClass('ui-dialog-buttonset');
+                $(this).find('button').addClass('commonButton');
+            });
+        });
+    };
+});
