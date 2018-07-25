@@ -1,7 +1,7 @@
 .m-style {
-    position: relative;
     text-align: center;
     zoom: 1;
+    float: right;
 }
 
 .m-style:before,

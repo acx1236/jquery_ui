@@ -11,4 +11,9 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping("/crewInfoList")
+    public String crewInfoList() {
+        return "crew/crewInfoList";
+    }
+
 }
