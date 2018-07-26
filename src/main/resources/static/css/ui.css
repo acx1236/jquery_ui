@@ -7,7 +7,7 @@ body {
 .container {
     background-color: #FFFFFF;
     padding: 15px;
-    height: 100%;
+    overflow: hidden;
 }
 
 .ui-button:focus {
