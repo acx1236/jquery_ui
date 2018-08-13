@@ -1,11 +1,9 @@
-.navigate-container {
+.navigate-container, .navigate-bar {
     display: inline-block;
-    position: fixed;
-    top: 100px;
 }
 
 .navigate-bar {
-    display: inline-block;
+    position: relative;
 }
 
 .whiteCircle {
@@ -36,15 +34,14 @@
 .join {
     display: block;
     width: 2px;
-    height: 40px;
+    height: 30px;
     background-color: #DDDDDD;
 }
 
 .navigate-text {
     display: inline-block;
-    position: absolute;
-    top: 0;
-    left: -3px;
+    float: right;
+    margin-top: 16px; /*第一行文字距View顶部的距离*/
 }
 
 .navigate-textView {
@@ -52,11 +49,15 @@
     font-size: 14px;
     font-weight: 500;
     color: #2C2C2C;
-    margin-top: 16px;
-    margin-bottom: 30px;
-    padding-left: 40px;
+    margin-bottom: 20px; /*每行文字之间的距离*/
+    padding-left: 20px; /*文字和竖线的距离*/
     -webkit-user-select: none;
     -moz-user-select: none;
+    text-align: left;
+}
+
+.navigate-textView:nth-last-child(1) {
+    margin-bottom: 0;
 }
 
 .navigate-textView-active, .navigate-textView:hover {
@@ -66,10 +67,11 @@
 
 .right {
     position: absolute;
+    display: inline-block;
     border: 2px solid #FFFFFF;
     background: url("../img/right_indicate.png");
-    width: 32px; /*根据图片大小修改*/
-    height: 12px; /*根据图片大小修改*/
-    left: -12px; /*根据图片大小修改*/
+    width: 20px; /*根据图片大小修改*/
+    height: 11px; /*根据图片大小修改*/
+    left: -5px; /*根据图片大小修改*/
     top: 18px; /*根据图片大小修改*/
 }

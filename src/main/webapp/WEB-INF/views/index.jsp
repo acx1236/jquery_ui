@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="css/navigate.css">
     <script src="js/jquery.js"></script>
+    <script src="js/zhDate.js"></script>
     <script src="jquery-ui/jquery-ui.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/page.js"></script>
     <script src="js/navigate.js"></script>
+    <style>
+        .ui-datepicker-title select {
+            vertical-align: top;
+        }
+    </style>
     <script type="text/javascript">
         $(function () {
             setButton($("#search").button(), "commonButton");
@@ -61,6 +67,13 @@
                 console.log('进入第' + page.getCurrentPage() + '页');
             });
             $('#navigate').navigate();
+            $("#name").datepicker({
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                showButtonPanel: true,
+                changeMonth: true,
+                changeYear: true
+            });
         });
     </script>
 </head>
@@ -71,7 +84,7 @@
         <td width="80%">
             <div class="container" style="padding-bottom: 200px" id="inputArea">
                 <label>Name:
-                    <input type="text" style="width: 200px;" required>
+                    <input id="name" type="text" style="width: 200px;" required>
                 </label>
                 <div style="margin: 30px">
                     <button id="determine" type="submit">确定</button>
@@ -229,6 +242,14 @@
         </td>
     </tr>
 </table>
-
 </body>
+<script>
+    $(function () {
+        var wait = new WaitDialog();
+        wait.open();
+        setTimeout(function () {
+            wait.close();
+        }, 5000);
+    });
+</script>
 </html>

@@ -31,3 +31,26 @@ jQuery(function ($) {
         });
     };
 });
+
+function WaitDialog() {
+    var masking = $('<div class="ui-widget-overlay ui-front" style="z-index: 100">');
+    var waiting = $('<img id="waiting" src="/img/waiting.png"' +
+        'style="width: 160px; height: 160px; z-index: 150;position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto">');
+    var interval;
+    this.open = function () {
+        $(document.body).append(masking).append(waiting);
+        var rotate = 0;
+        interval = setInterval(function () {
+            rotate += 30;
+            rotate = rotate % 360;
+            waiting.css("transform", "rotate(" + rotate + "deg)");
+        }, 100);
+    };
+    this.close = function () {
+        if (interval !== undefined) {
+            clearInterval(interval);
+        }
+        waiting.remove();
+        masking.remove();
+    };
+}

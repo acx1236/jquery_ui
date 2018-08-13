@@ -18,6 +18,10 @@ jQuery(function ($) {
             count = options.count > options.pageCount ? options.pageCount : options.count,
             $obj = $(element); //容器
 
+        this.setCurrentPage = function (setPage) {
+            currentPage = setPage;
+        };
+
         this.getCurrentPage = function () {
             return currentPage;
         };
